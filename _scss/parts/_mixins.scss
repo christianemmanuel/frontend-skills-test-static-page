@@ -2,6 +2,7 @@
   $tablet: "(max-width: 920px)";
   $tablet_small: "(max-width: 768px)";
   $mobile: "(max-width: 667px)";
+  $xsmobile: "(max-width: 480px)";
 
   @if $point == lg {
     @media screen and #{$tablet} {
@@ -15,6 +16,11 @@
   }
   @else if $point == sm {
     @media screen and #{$mobile} {
+      @content;
+    }
+  }
+  @else if $point == xs {
+    @media screen and #{$xsmobile} {
       @content;
     }
   }

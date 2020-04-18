@@ -189,20 +189,19 @@
         font-size: 22px;
       }
     }
-    .slick-slide {
-      padding: 0;
-    }
   }
   .commitment__wrapper {
-    height: 340px;
+    height: auto;
+    padding-top: 55px;
+    padding-bottom: 55px;
     .commitment__header {
       font-size: 26px;
+      margin-bottom: 20px;
     }
   }
   .events_cards {
     margin-left: 0;
     .slick-slide {
-      padding: 0;
       padding-top: 16px;
     }
     .events__card {
@@ -302,5 +301,21 @@
     .desktop__footer_social {
       margin-top: 20px;
     }
+  }
+  .commitment__wrapper {
+    .commitment__details {
+      max-width: 100%;
+    }
+  }
+}
+@include breakpoint(sm) { 
+  .banner {
+    height: 400px;
+    .header__caption {
+      margin-top: 30px;
+    }
+  }
+  h2 {
+    font-size: 22px;
   }
 }

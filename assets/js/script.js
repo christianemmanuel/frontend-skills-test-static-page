@@ -21,14 +21,14 @@ $(document).ready(function() {
 
   $('.header__tagline').click(function() {
     if (!$(this).hasClass('play')) {
-      $('.header__branding picture source').attr('srcset', '/assets/images/logo-mobile.png');
+      $('.header__branding picture source').attr('srcset', './assets/images/logo-mobile.png');
       $(this).addClass('play');
 
       var transparentBackground = "<div class='transparent-background'></div>";
       $("body").append(transparentBackground);
       
     } else  {
-      $('.header__branding picture source').attr('srcset', '/assets/images/invesco-logo.jpg');
+      $('.header__branding picture source').attr('srcset', './assets/images/invesco-logo.jpg');
       $(this).removeClass('play');
       $('.transparent-background').remove();
     }

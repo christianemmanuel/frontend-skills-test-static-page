@@ -554,18 +554,18 @@ section {
 
   .insights_cards .insights__card h4 {
     font-size: 22px; }
-  .insights_cards .slick-slide {
-    padding: 0; }
 
   .commitment__wrapper {
-    height: 340px; }
+    height: auto;
+    padding-top: 55px;
+    padding-bottom: 55px; }
     .commitment__wrapper .commitment__header {
-      font-size: 26px; }
+      font-size: 26px;
+      margin-bottom: 20px; }
 
   .events_cards {
     margin-left: 0; }
     .events_cards .slick-slide {
-      padding: 0;
       padding-top: 16px; }
     .events_cards .events__card {
       background: #001a7a; }
@@ -628,4 +628,15 @@ section {
       flex-direction: column;
       align-items: baseline; }
     .desktop__footer .desktop__footer_social {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+
+  .commitment__wrapper .commitment__details {
+    max-width: 100%; } }
+@media screen and (max-width: 667px) {
+  .banner {
+    height: 400px; }
+    .banner .header__caption {
+      margin-top: 30px; }
+
+  h2 {
+    font-size: 22px; } }
