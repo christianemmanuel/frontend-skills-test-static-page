@@ -308,7 +308,7 @@
     }
   }
 }
-@include breakpoint(sm) { 
+@include breakpoint(xs) { 
   .banner {
     height: 400px;
     .header__caption {

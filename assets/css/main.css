@@ -632,7 +632,7 @@ section {
 
   .commitment__wrapper .commitment__details {
     max-width: 100%; } }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 480px) {
   .banner {
     height: 400px; }
     .banner .header__caption {
