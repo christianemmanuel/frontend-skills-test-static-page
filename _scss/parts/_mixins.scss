@@ -1,0 +1,57 @@
+@mixin breakpoint($point) {
+  $tablet: "(max-width: 920px)";
+  $tablet_small: "(max-width: 768px)";
+  $mobile: "(max-width: 667px)";
+
+  @if $point == lg {
+    @media screen and #{$tablet} {
+      @content;
+    }
+  }
+  @else if $point == md {
+    @media screen and #{$tablet_small} {
+      @content;
+    }
+  }
+  @else if $point == sm {
+    @media screen and #{$mobile} {
+      @content;
+    }
+  }
+}
+@mixin transition {
+  transition: all 0.5s;
+  -webkit-transition: all 0.25s;
+}
+@mixin flexbox {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+@mixin inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  align-content: center;
+}
