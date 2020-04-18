@@ -189,6 +189,9 @@
         font-size: 22px;
       }
     }
+    .slick-slide {
+      padding: 0;
+    }
   }
   .commitment__wrapper {
     height: 340px;
@@ -197,7 +200,9 @@
     }
   }
   .events_cards {
+    margin-left: 0;
     .slick-slide {
+      padding: 0;
       padding-top: 16px;
     }
     .events__card {

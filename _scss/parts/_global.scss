@@ -247,6 +247,7 @@ section {
   // -webkit-grid-gap: 15px;
   // -moz-grid-gap: 15px;
   // grid-gap: 15px;
+  margin-left: -7px;
   .events__card {
     background-color:  $dark-blue;
     padding: 0 20px 105px 20px;
@@ -319,6 +320,10 @@ section {
         height: 0;
       }
     }
+  }
+  .slick-slide {
+    padding: 7px;
+    padding-top: 16px;
   }
 }
 
